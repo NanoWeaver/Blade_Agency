@@ -29,7 +29,7 @@
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Playfair Display';
-    font-style:normal;
+    font-style: normal;
     font-weight: 900;
     src: url('../fonts/PlayfairDisplaySC-Black.ttf') format('ttf');
 }
@@ -47,71 +47,85 @@
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 100;
-    src: url('../fonts/Lato-Thin.ttf') format('ttf');
-}
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: italic;
-    font-weight: 100;
-    src: url('../fonts/Lato-ThinItalic.ttf') format('ttf');
-}
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 300;
-    src: url('../fonts/Lato-Light.ttf') format('ttf');
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: italic;
     font-weight: 300;
-    src: url('../fonts/Lato-LightItalic.ttf') format('ttf');
+    src: url('../fonts/Lato-LightItalic.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Lato-Regular.ttf') format('ttf');
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: italic;
     font-weight: 400;
-    src: url('../fonts/Lato-Italic.ttf') format('ttf');
+    src: url('../fonts/Lato-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Lato-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/Lato-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Lato-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/Lato-SemiBoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/Lato-Bold.ttf') format('ttf');
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: italic;
     font-weight: 700;
-    src: url('../fonts/Lato-BoldItalic.ttf') format('ttf');
+    src: url('../fonts/Lato-BoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/Lato-Black.ttf') format('ttf');
+    src: url('../fonts/Lato-Black.ttf') format('truetype');
 }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Lato';
     font-style: italic;
     font-weight: 900;
-    src: url('../fonts/Lato-BlackItalic.ttf') format('ttf');
+    src: url('../fonts/Lato-BlackItalic.ttf') format('truetype');
 }
 
 
@@ -189,7 +203,7 @@ html {
     color: var(--gold);
     font-size: 24px;
     letter-spacing: 0.02em;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .hero__title {
@@ -198,5 +212,30 @@ html {
     font-size: 72px;
     line-height: 1.1em;
     letter-spacing: 0.04em;
-    font-weight: 700;
+    font-weight: 900;
+}
+
+.hero__event-details-wrapper {
+    display: flex;
+    column-gap: 48px;
+}
+
+.hero__event-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.hero__icon-wrapper {
+    width: 44px;
+    height: 44px;
+}
+
+.hero__event-text {
+    display: flex;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-right: 48px;
+    font-size: 18px;
+    color: white;
+    opacity: 0.74;
 }
